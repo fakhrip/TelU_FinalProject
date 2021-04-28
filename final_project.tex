@@ -1,0 +1,408 @@
+\documentclass{final_project}
+\usepackage[english]{babel}
+\usepackage[table]{xcolor}
+\usepackage[all]{nowidow}
+\usepackage{indentfirst}
+\usepackage{tocbibind}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{pageslts}
+\usepackage{fontspec}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{titletoc}
+\usepackage{caption}
+\usepackage{lipsum}
+
+% Setup paper size and margin for the page layout
+\usepackage[
+    a4paper,
+    left=4cm,
+    top=3cm,
+    bottom=3cm,
+    right=3cm,
+]{geometry}
+    
+% --------------
+% MAIN CONTENT |
+% --------------
+\title{JUDUL DALAM BAHASA INDONESIA}
+\author{Muhammad Fakhri Putra Supriyadi}
+\date{April 2021}
+
+\begin{document}
+\pagenumbering{roman}
+
+\abstrak{%
+    Abstrak merupakan ikhtisar suatu Tugas Akhir yang memuat permasalahan, tujuan, metode penelitian, hasil, dan kesimpulan. Abstrak dibuat untuk memudah-kan pembaca mengerti secara cepat isi Tugas Akhir untuk memutuskan apakah perlu membaca lebih lanjut atau tidak. \par
+    Umumnya terdiri dari maksimal 3 paragraf. Paragraf 1 berisi mengenai latar-belakang pemilihan masalah, tujuan penelitian dan batasannya. Paragraf 2 berisi mengenai cara-cara, langkah-langkah atau bagian-bagian apa yang diusulkan/ dilakukan untuk memecahkan masalah itu. \par
+    Isi dari paragraf 3 biasanya mengenai tujuan/hasil, parameter keberhasilan apa yang ingin dicapai (secara kuantitatif) dan/atau parameter keberhasilan apa yang telah dicapai dari penelitian yang dilakukan.
+}{%
+    Tuliskan dua sampai enam kata kunci yang berkaitan dengan masalah yang dibahas.
+}%
+
+\addalllist{}
+\pagenumbering{arabic}
+
+\cbsection{1}{BAB I}{PENDAHULUAN}
+
+\subsection{Latar Belakang Masalah}
+
+Bagian ini menjelaskan apa yang melatarbelakangi dilakukannya suatu 
+penelitian. 
+Jelaskan apa yang menjadi penyebab, pendorong, dasar/alasan suatu penelitian. 
+Bagian ini harus bisa menjawab pertanyaan pembaca mengenai “MENGAPA” penelitian dilakukan.
+
+Penelitian biasanya didasari dari suatu masalah (saat lampau, saat ini, saat esok), yang kemudian ingin dicari penyelesaiannya. Jika penelitian berasal dari permasalahan yang ada di lingkungan sekitar, di bagian ini uraikan masalah-masalah yang ada. Lengkapi uraian itu dengan hasil survey, potongan berita, atau laporan ilmiah mengenai masalah tersebut.
+
+Jika penelitian merupakan pengembangan dari suatu sistem atau alat, uraikan di bagian ini mengenai kondisi sistem/alat tersebut dan kekurangan-kekurangan yang dianggap perlu untuk dikembangkan lebih lanjut.
+
+Jika penelitian ini adalah pengembangan dari penelitian-penelitian sebelumnya, jelaskan pada bagian latar belakang ini, penelitian-penelitian apa yang dimaksud, sebutkan apa perbedaan dan hasil dari penelitian-penelitian tersebut, dan bagian apa/mana yang akan anda lanjutkan/tingkatkan. Latar Belakang HARUS berisi poin-poin berikut ini:
+
+\renewcommand{\labelitemi}{\textendash}
+\begin{enumerate}
+    \item Apa kondisi umum (yang mendukung) saat ini
+    \item Apa kondisi suatu bidang spesifik (yang anda tinjau)
+    \item Masalah apa yang terjadi di bidang spesifik itu (past, present, future)
+    \item Deskripsi masalah tersebut :
+    \begin{itemize}
+        \item kira-kira apa penyebabnya
+        \item apa prilaku/karakteristik dari masalah itu
+        \item dampak masalah itu terhadap sistem yang lebih luas
+    \end{itemize}
+    \item Deskripsikan solusi-solusi yang mungkin mengatasi masalah itu
+    \item Apa solusi pilihan anda, mengapa ?
+    \item Deskripsikan solusi yang anda usulkan. (sedikit/sekilas saja)
+    \item Ungkapkan pentingnya solusi anda (dampak/keunggulan) dibanding solusi lain.
+\end{enumerate}
+
+Contoh: Peningkatan efisiensi sel surya sudah banyak diteliti, mengenai bahan \cite{1,2}, lapisan pelindung \cite{3,4}, dan kualitas konduktor \cite{5,6}. Namun belum ada yang meneliti masalah ...... nya. Di penelitian ini kami mengusulkan algoritma baru sistem tracking berdasarkan model SURYO [9].
+    
+\subsection{Rumusan Masalah}
+
+Menjabarkan permasalahan-permasalahan yang harus diselesaikan dalam mencapai tujuan. Setiap masalah dalam rumusan masalah akan mempunyai jawaban, baik di model sistem, lampiran, analisis, maupun kesimpulan. 
+
+Pada bagian ‘Rumusan Masalah’ ini, masalah yang sudah disebutkan sebelumnya itu di’rumus’kan, dijadikan satu ‘rumus’, dijadikan suatu (atau beberapa) pernyataan yang ringkas dan tepat.
+
+Ringkasan permasalahan tersebut BUKAN masalah/ kendala yang (mungkin) ada dalam usaha anda ketika melakukan penelitian, perancangan, implementasi sistem dan sejenisnya.
+
+Jadi, inti rumusan masalah seperti contoh berikut:
+\begin{enumerate}
+   \item Sistem peringatan dini banjir seperti apa yang cocok untuk masyarakat di wilayah Dayeuhkolot ? 
+   \item Bagaimana desain dan implementasi sistem broadcast SMS yang efektif sebagai sistem peringatan dini banjir di Dayeuhkolot ?
+\end{enumerate} 
+
+Rumusan masalah \textbf{BUKAN} seperti :
+\begin{enumerate}
+   \item Bagaimana komunikasi antara sensor banjir dengan mikrokontroller ?
+   \item Bagaimana mengintegrasikan GPRS modem dengan mikrokontroller ?
+   \item Bagaimana melakukan setting pada GPRS modem untuk broadcast SMS ?
+\end{enumerate}
+
+Rumusan-rumusan masalah tersebut kemudian dijabarkan dalam kalimat-kalimat pernyataan yang logis, argumentatif, mencakup area yang akan dikerjakan, dan jalinan antar kalimat dan paragraf yang konvergen.
+
+\subsection{Tujuan dan Manfaat}
+
+Bagian ini menjelaskan tujuan dari penelitian yang dilakukan. Manfaat dari perangkat tersebut diharapkan dapat dipakai guna meningkatkan efisiensi waktu dan produktivitas.
+
+\renewcommand{\labelitemi}{\textbullet}
+\begin{itemize}
+    \item Menyatakan hal-hal yang ingin dicapai dalam Tugas Akhir tersebut.
+    \item Tujuan harus sesuai dengan judul.
+    \item Dari Tujuan yang dikemukakan nantinya akan terdapat jawabannya di kesimpulan.
+    \item Manfaat menyatakan kegunaan praktis dari hasil penelitian yang dilakukan.
+\end{itemize}
+
+\subsection{Batasan Masalah}
+
+Bagian ini menjelaskan tentang ruang lingkup, kondisi-kondisi dan/atau asumsi yang (di)berlaku(kan) pada rumusan masalah yang dibuat. Pada keadaan-keadaan apa suatu solusi (hasil penelitian anda) masih dikatakan berlaku.
+
+Batasan tidak boleh terlalu melebar dan terlalu sempit, harus cukup rasional untuk keadaan sebenarnya. misalnya:
+\begin{itemize}
+    \item Hukum mekanika Newton masih berlaku pada kondisi kecepatan benda jauh dari kecepatan cahaya.
+    \item Hukum ekonomi klasik berlaku pada kondisi ‘cateris paribus’.
+\end{itemize}
+
+Batasan Masalah adalah seperti:
+\begin{enumerate}
+    \item Masyarakat yang dijadikan objek penelitian adalah warga di Kec.Dayeuhkolot.
+    \item Banjir yang diamati hanya akibat luapan sungai Citarum.
+    \item Sistem hanya dapat mem-broadcast SMS untuk 100 nomor (hanya ketua RT).
+\end{enumerate}
+
+Batasan Masalah \textbf{BUKAN} seperti:
+\begin{enumerate}
+    \item Beban maksimum mobil listrik ini adalah 10 kg. $\Rightarrow$ (berat normal bayi 1,5 tahun ~12 kg, siapa yang mau nyetir?, bayi?).
+    \item Sistem Hidroponik Otomatis ini hanya untuk satu pohon kangkung. $\Rightarrow$ (terlalu ‘mahal’, irrasional).
+    \item Sistem Catu-Daya regeneratif ini bisa untuk semua kendaraan. $\Rightarrow$ (terlalu ‘luas’, pesawat bisa?).
+\end{enumerate}
+
+\subsection{Metode Penelitian}
+
+Menyatakan cara pendekatan atau metode dalam menyelesaikan pekerjaan di dalam Tugas Akhir.
+
+Pekerjaan penelitian dilakukan dengan pendekatan: studi teoritis/studi literatur, pengukuran empirik, analisis statistik, simulasi, perancangan, dan implementasi.
+
+\subsection{Jadwal Pelaksanaan}
+
+Berisi jadwal pelaksanaan pengerjaan Tugas Akhir. Perlu ditetapkan beberapa \textit{milestone} untuk menentukan pencapaian pekerjaan.
+
+Jadwal pelaksanaan akan menjadi acuan dalam mengevaluasi tahap-tahap pekerjaan seperti yang tertuang dalam milestone yang sudah ditetapkan.
+
+\begin{table}[!ht]
+\centering
+\caption{Contoh Jadwal dan Milestone.}
+\begin{tabular}{|p{5mm}|p{25mm}|p{20mm}|p{20mm}|p{35mm}|} 
+ \hline
+ \rowcolor{lightgray}
+ \textbf{No.} & \textbf{Deskripsi Tahapan} & \textbf{Durasi} & \textbf{Tanggal Selesai} & \textbf{\textit{Milestone}} \\
+ \hline
+ 1 & Desain Sistem & 2 minggu & 22 Jan 2016 & Diagram Blok dan spesifikasi Input-Output \\ 
+ \hline
+ 2 & Pemilihan Komponen & 2 minggu & 5 Feb 2016 & List komponen yang akan digunakan \\
+ \hline
+ 3 & Implementasi Perangkat Keras, dll & 1 bulan & 4 Mar 2016 & Prototype 1 selesai \\
+ \hline
+ 4 & Penyusunan laporan/buku TA & 2 minggu & 13 Mei 2016 & Buku TA selesai \\
+ \hline
+\end{tabular}
+\label{table:1}
+\end{table}
+
+\cbsection{2}{BAB II}{TINJAUAN PUSTAKA}
+
+Bab ini berisi uraian dari pengertian anda mengenai landasan teori yang didapat dari pustaka, BUKAN merupakan pengetikan (‘\textit{copy-paste}’) ulang dari sumber pustaka.
+
+Berisi uraian mengenai sistem, cara kerja, metode, algoritma, pendekatan, dan deskripsi kasus penerapannya. Misalnya Sistem Kendali xxx, Algoritma Pengontrolan yyy, Metode Identifikasi zzz dan sejenisnya. BUKAN membahas uraian atau spesifikasi suatu ALAT (\textit{Board}, Komponen, Sensor, Aktuator, dslb). 
+
+Bab ini dibagi menjadi bidang-bidang ilmu yang berkaitan dan dianggap perlu terhadap sistem yang diusulkan. Bidang ilmu itu dipisahkan atau dibedakan berdasarkan ruang-lingkup dan batasan dengan ilmu sejenis (dapat ditanyakan ke pembimbing), dan biasanya terdiri dari 3-5 bidang ilmu. 
+
+Susunan uraian pada tiap topik:
+\begin{enumerate}
+    \item Penjelasan teori.
+    \item Diturunkan dari teori apa, kemudian dapat dikembangkan ke teori apa.
+    \item Deskripsikan teori itu algoritma/sistemnya:
+    \begin{enumerate}
+        \item algoritma/sistemnya 
+        \item komponen penyusun
+        \item diagram sistem
+        \item cara kerjanya
+    \end{enumerate}
+    \item Dimana biasanya teori ini dipakai.
+    \item Pada kasus penelitian anda konfigurasi/jenis/komponen apa yang (cocok) digunakan.
+\end{enumerate}
+
+Hal-hal tersebut diuraikan seperti pada artikel di Wikipedia.
+    
+\subsection{Penggunaan Bahasa Indonesia yang Baik dan Benar}
+
+Beberapa kesalahan yang sering terjadi dalam penulisan Tugas Akhir dapat dilihat pada uraian di bawah ini:
+\begin{itemize}
+    \item Membuat kalimat yang panjang sekali (kalimat majemuk) sehingga tidak jelas mana subyek dan predikat. Biasanya kesalahan ini muncul dengan menggunakan kata “yang” berulang kali. \textbf{Sebaiknya}, gunakan kalimat sederhana yang lengkap. Kalimat terdiri dari Subyek, Predikat, Obyek dan Keterangan (SPOK). Panjang kalimat maksimal 3 baris.
+    \item Menggunakan bahasa yang “berbunga-bunga” dan tidak langsung to the point. Pembaca akan lelah membacanya. Mengapa penulis tidak hemat dengan kata-katanya?. Jadi, kalimat yang baik adalah kalimat efektif. Cirinya yaitu apabila ada kata-kata yang dihilangkan, maka kalimat tidak berubah arti. 
+    \item Membuat kalimat yang tidak ada subyeknya. Sebenarnya, ini bukan kalimat utuh, namun masih frasa.
+    \item Kurang tepat dalam menggunakan tanda baca. Misalnya, ada tanda baca titik (atau koma) yang lepas sendirian pada satu baris. (Hal ini karena tanda titik tersebut tidak menempel pada sebuah kata.) 
+    \item Salah dalam cara menuliskan istilah asing atau dalam cara mengadopsi istilah asing. Mencampur-adukkan istilah asing dan bahasa Indonesia sehingga membingungkan. 
+    \item Menuliskan dalam kalimat yang membingungkan (biasanya dalam jurnal-jurnal). Apakah tujuannya adalah mempersulit para reviewer makalah sehingga makalahnya diloloskan? 
+\end{itemize}
+
+Dokumen teknis biasanya penuh dengan istilah-istilah. Apalagi di dunia ke-teknik-elektroan dimana komputer, telekomunikasi, dan Internet sudah ada dimana-mana, istilah komputer sangat banyak. Masalahnya adalah apakah kita terjemahkan istilah tersebut, atau kita biarkan, atau kombinasi?.
+
+Ada juga istilah asing yang sebenarnya ada padan katanya di dalam Bahasa Indonesia. Namun mahasiswa sering menggunakan kata asing tersebut dan meng-Indonesia-kannya. Contoh kata yang sering digunakan adalah kata “existing” yang diterjemahkan menjadi “eksisting”. Penggunaan kata “eksisting” ini juga kurang tepat. Jika terjadi kebingungan gunakan Kamus Bahasa Indonesia online yang dapat diakses di kbbi.web.id.
+
+\subsection{Format Penulisan Tugas Akhir}
+
+Penampilan merupakan faktor penting untuk mewujudkan Tugas Akhir yang rapi dan seragam [1]. Berikut ini adalah beberapa aspek yang distandarkan.
+
+\subsubsection{Kertas}
+
+Spesifikasi kertas yang digunakan adalah kertas berjenis HVS berwarna putih polos dengan berat 80 gram/cm3 dan ukurannya A4 (21,5 cm x 29,7 cm).
+
+\subsubsection{Pengetikan}
+
+Pengetikan dan/atau pencetakan dilakukan pada satu sisi kertas (single side), dengan posisi penempatan teks pada tepi kertas adalah: 
+\begin{itemize}
+    \item Batas kiri: 4 cm (termasuk 1 cm untuk penjilidan) dari tepi kertas. 
+    \item Batas kanan: 3 cm dari tepi kertas.
+    \item Batas atas: 3 cm dari tepi kertas.
+    \item Batas bawah: 3 cm dari tepi kertas. 
+\end{itemize}
+
+Huruf menggunakan jenis huruf Times New Roman 12 poin (ukuran sebenarnya) dan diketik rapi (rata kiri kanan – \textit{justify}). Pengetikan dilakukan dengan spasi 1,5 (\textit{Line spacing} = 1.5 lines), dan huruf yang tercetak dari printer harus berwarna hitam pekat dan seragam.
+
+\subsubsection{Penomoran Halaman}
+
+Penomoran halaman tidak diberi imbuhan apa pun. Jenis nomor halaman ada dua macam, yaitu angka Romawi kecil seperti \textit{i}, \textit{ii}, \textit{iii} dst dan angka Arab seperti 1, 2, 3, … dst.
+
+Angka Romawi kecil digunakan untuk bagian awal Tugas Akhir kecuali Halaman Sampul. Letak horizontal di tengah, 2,5 cm dari tepi bawah kertas. Khusus untuk halaman Judul, penomorannya tidak ditulis tetapi tetap diperhitungkan. 
+
+Angka Arab digunakan untuk bagian isi Tugas Akhir dan bagian akhir Tugas Akhir yaitu Daftar Pustaka. Letaknya di sudut kanan atas; 1,5 cm dari tepi atas kertas dan 3 cm dari tepi kanan kertas. Khusus untuk halaman pertama setiap bab, penomoran diletakkan di tengah, 2,5 cm dari tepi bawah kertas. 
+
+\subsubsection{Ketentuan Halaman Sampul}
+
+Halaman sampul diketik simetris di tengah (\textit{center}). Judul tidak diperkenankan menggunakan singkatan, kecuali nama atau istilah telah lazim digunakan di bidang ilmu tersebut MIMO, WLAN,  dan tidak disusun dalam kalimat tanya serta tidak perlu ditutup dengan tanda baca apa pun. 
+
+\subsection{Ketentuan Penggunaan Gambar, Tabel dan Persamaan}
+
+\subsubsection{Penyisipan Gambar}
+
+Nomor urut dan judul gambar ditulis di bawah gambar yang dijelaskan dengan nama gambar. Angka pertama pada nomor urut gambar merujuk pada bab berapa gambar itu muncul. Angka kedua merujuk pada urutan gambar ke berapa pada bab tersebut. Untuk mudahnya, semua judul gambar pada dokumen ini telah diformat sesuai ketentuan, anda tinggal mengganti tulisan keterangan gambar lalu sorot keseluruhan baris judul gambar, klik-kanan dan pilih ‘\textit{Update Field}’.
+
+Gambar yang disisipkan harus dirujuk dalam kalimat pada paragraf sebelum atau sesudah gambar itu diletakkan. Misalnya, penggunaan gambar dan penulisan nomor urut serta judul gambar seperti ditunjukkan pada Gambar \ref{fig:1}. Pada paragraf setelah penyisipan gambar, harus ada tulisan yang menjelaskan tentang maksud/arti gambar dan tujuan penggunaannya pada tulisan.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.25\textwidth]{examplefig.png}
+    \caption{Desain rangkaian elektonik.}
+    \label{fig:1}
+\end{figure}
+
+\subsubsection{Penyisipan Tabel}
+
+Nomor urut dan judul tabel ditulis di atas tabel. Angka pertama pada nomor urut tabel merujuk pada bab berapa tabel itu muncul, dan angka kedua merujuk pada urutan table keberapa pada bab tersebut. Untuk mudahnya, semua judul tabel pada dokumen ini telah diformat sesuai ketentuan, anda tinggal mengganti tulisan keterangan tabel lalu sorot keseluruhan baris judul tabel, klik-kanan dan pilih ‘\textit{Update Field}’.
+
+Tabel yang disisipkan harus dirujuk pada paragraf sebelum atau sesudah tabel itu diletakkan. Misalnya sistem yang akan dirancang memiliki karakteristik sebagai dijelaskan pada Tabel 2.1. Setelah penyisipan tabel, harus ada tulisan yang menjelaskan tentang maksud/arti tabel dan tujuan penggunaannya pada tulisan. Penulisan nomenklatur judul tabel mengikuti buku terbitan IEEE, yaitu nomenklatur dicetak tebal (Bold) “\textbf{Tabel 2.1}” diikuti 2 spasi, kemudian tulis judul sebagai Sentence case dan diakhiri tanda baca titik.
+
+\begin{table}[!ht]
+\centering
+\caption{Hubungan antara Input dan Output.}
+\begin{tabular}{|p{10mm}|p{15mm}|p{15mm}|p{15mm}|} 
+ \hline
+ \rowcolor{lightgray}
+ \textbf{No.} & \textbf{\textit{Input} 1} & \textbf{\textit{Input} 2} & \textbf{\textit{Output}} \\
+ \hline
+ 1 & A & A & C \\ 
+ \hline
+ 2 & A & B & D \\
+ \hline
+ 3 & B & A & E \\
+ \hline
+ 4 & B & B & F \\
+ \hline
+\end{tabular}
+\label{table:2}
+\end{table}
+
+\vspace{20mm}
+\subsubsection{Penulisan Rumus atau Persamaan}
+
+Pada Microsoft office, rumus dapat ditulis menggunakan fasilitas yang disediakan (Insert >> Equation).
+
+\begin{equation}\label{eqn:1}
+    f(x)=\alpha_{0}+\sum_{n=1}^{\infty}(\alpha_{n}cos{\frac{{n}\pi{x}}{L}}+\beta_{n}sin{\frac{{n}\pi{x}}{L}})
+\end{equation}\\
+dimana:
+
+	$\alpha_{0}$ = Konstanta alfa di indeks ke-0.
+	
+	$\beta_{n}$ = Konstanta beta di indeks ke-n.
+	
+Setiap rumus atau persamaan yang dianggap penting diberi idetitas nomor yang penulisannya seperti pada contoh rumus 
+\eqref{eqn:1} di atas, artinya rumus di Bab 2 urutan ke 1. Kemudian dijelaskan tentang maksud dan arti rumus atau persamaan itu serta tujuan penggunaannya pada tulisan.
+
+\subsection{Penulisan Kutipan format IEEE.}
+
+Walaupun penulis diperkenankan mengutip, bukan berarti tulisannya sarat dengan kutipan. Tulisan hasil penelitian harus merupakan hasil gagasan asli penulisnya bukan kumpulan kutipan pendapat pihak lain. Jika akan mengutip, pertimbangkan jangan sering mengutip dengan cara langsung, variasikan dengan cara tidak langsung. Kutipan seharusnya dapat mengembangkan gagasan penelitian.
+
+Kutipan dapat dibedakan menjadi kutipan langsung dan tidak langsung. Kutipan langsung merupakan salinan yang persis sama dengan sumbernya tanpa penambahan. Kutipan tidak langsung adalah ide/konsep orang lain yang dikutip dengan menggunakan kata-kata penulis/peneliti sendiri.
+
+\subsubsection{Kutipan Langsung}
+
+Cara melakukan kutipan langsung:
+\begin{itemize}
+    \item Dikutip apa adanya.
+    \item Diintegrasikan ke dalam teks paparan penulis.
+    \item Dibubuhi tanda kutip (“….”)
+    \item Sertakan sumber kutipan di awal atau di akhir kutipan, yakni nomor urut referensi di Daftar Pustaka, misalnya [12].
+    \item Jika berbahasa lain (asing atau daerah), kutipan ditulis dimiringkan (italic).
+    \item Jika ada bagian kalimat yang dihilangkan, ganti bagian itu dengan tanda titik sebanyak tiga buah jika yang dihilangkan itu ada di awal atau di tengah kutipan, dan empat titik jika di bagian akhir kalimat.
+    \item Jika ada penambahan komentar, tulis komentar tersebut di antara tanda kurung, misalnya, (penggarisbawahan oleh penulis).
+\end{itemize}
+
+Contoh: Ada beberapa pendapat mengenai hal ini. Nugraha mengatakan "Sistem sensor warna berbasis LDR mampu mengenali dan membedakan jenis warna yang diprioritaskan...." [10].
+
+\subsubsection{Kutipan Tidak Langsung}
+
+Cara melakukan kutipan tidak langsung adalah sebagai berikut:
+\begin{itemize}
+    \item Menggunakan redaksi dari penulis sendiri (parafrasa).
+    \item Mencantumkan sumber (urutan referensi di Daftar Pustaka)
+\end{itemize}
+
+Contoh: Pendekatan penggunaan LDR sebagai sensor warna telah terbukti dapat digunakan dengan cukup efektif [10].
+
+\subsection{Penggunaan Referensi}
+
+Sumber referensi dapat menggunakan Buku (Textbook, Handbook, dll), Buku TA, Proceeding Konferensi, Jurnal, Datasheet, White Paper, Majalah Ilmiah, Halaman Website. Untuk Proposal Tugas Akhir, menggunakan minimal 5 sumber referensi yang ber-ISSN atau ber-ISBN.
+
+% ---------------------------------------------
+%                CATATAN                      |
+% ---------------------------------------------
+% saya tidak memasukkan keseluruhan contohnya |
+% seperti yang pada contoh Proposal TA        |
+% karena males, kebanyakan euy wkwk           |
+% ---------------------------------------------
+
+\cbsection{3}{BAB III}{PERANCANGAN SISTEM}
+
+\subsection{Desain Sistem}
+
+Dalam bab ini diuraikan secara rinci cara dan pelaksanaan kerja, hasil pengamatan percobaan atau pengumpulan data dan informasi lapangan, pengolahan data dan informasinya.
+
+\subsubsection{Diagram Blok}
+
+\subsubsection{Fungsi dan Fitur}
+
+\subsection{Desain Perangkat Keras}
+
+\subsubsection{Spesifikasi Komponen}
+
+\subsection{Desain Perangkat Lunak}
+
+\subsubsection{Spesifikasi Sub Sistem}
+
+\cbsection{4}{BAB IV}{HASIL DAN ANALISIS}
+
+\subsection{Hasil Percobaan}
+
+Dalam bab ini diuraikan secara rinci analisis dan pembahasan data dan informasi tersebut serta pembahasan hasil (\textit{discussion}).
+
+\subsubsection{Pengujian Parameter A}
+
+\subsubsection{Pengujian Parameter B}
+
+\subsection{Analisis}
+
+\subsubsection{Analisis Hubungan Parameter A terhadap Tujuan A}
+
+\subsubsection{Analisis Hubungan Parameter B terhadap Tujuan A}
+
+\subsubsection{Analisis Hubungan Parameter A terhadap Tujuan B}
+
+\subsubsection{Analisis Hubungan Parameter B terhadap Tujuan B}
+
+\cbsection{5}{BAB V}{SIMPULAN DAN SARAN}
+
+\subsection{Simpulan}
+
+Bab ini memuat elaborasi dan rincian simpulan yang kemudian menjadi bagian abstraks. Simpulan ditarik dari hasil analisis secara komprehensif atas eksperimen yang telah dilakukan dan dinyatakan dalam bentuk narasi satu dua paragraf. Dalam Simpulan menggambarkan tingkat ketercapaian atas Tujuan Tugas Akhir yang telah dinyatakan dalam Bab 1.
+
+\subsection{Saran}
+
+Di dalam Saran, untuk pengembangan penelitian sebelumnya, pembuatan sistem disarankan untuk lebih xxx, sehingga tujuan dapat lebih tercapai.\\
+Alasannya :
+\begin{enumerate}
+    \item Harus lebih mengidentifikasi masalah
+    \item Harus menyesuaikan dengan teknologi yang ada
+    \item Kelemahan-kelemahan yang terjadi 
+\end{enumerate}
+
+\daftarpustaka
+
+\csection{6}{LAMPIRAN}
+
+Lampiran dapat berisi kode sumber, tabel-tabel yang diperlukan dalam penelitian tapi kurang relevan untuk dimasukkan dalam bab-bab dalam proposal. 
+
+\end{document}
